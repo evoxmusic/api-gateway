@@ -47,4 +47,4 @@ printf "--------- EOF GENERTED ROUTES.CONF ---------\n"
 printf "> nginx.conf and routes.conf configuration files loaded!\n\n"
 
 # Start NGINX
-#nginx -g 'daemon off;'
+nginx -g 'daemon off;'

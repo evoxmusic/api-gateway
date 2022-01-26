@@ -2,7 +2,6 @@ location ~* ^/website/(.*)$ {
     proxy_pass https://www.qovery.com$request_uri;
 }
 
-
 location ~* ^/(.*)$ {
     proxy_pass http://$APP_BACKEND$request_uri;
 }
