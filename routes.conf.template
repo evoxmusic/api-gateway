@@ -3,5 +3,5 @@ location ~* ^/website/(.*)$ {
 }
 
 location ~* ^/(.*)$ {
-    proxy_pass http://$APP_BACKEND$request_uri;
+    proxy_pass http://$APP_FRONTEND$request_uri;
 }
