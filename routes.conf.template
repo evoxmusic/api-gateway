@@ -5,7 +5,3 @@ location ~* ^/website/(.*)$ {
 location ~* ^/(.*)$ {
     proxy_pass http://$APP_FRONTEND$request_uri;
 }
-
-location ~* ^/podinfo/(.*)$ {
-    proxy_pass http://$PODINFO_HOST$request_uri;
-}
