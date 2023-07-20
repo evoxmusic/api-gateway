@@ -15,6 +15,7 @@ COPY routes.conf.template /etc/nginx/routes.conf.template
 COPY run.sh /etc/nginx/run.sh
 RUN chmod +x /etc/nginx/run.sh
 
+
 EXPOSE 80
 
 CMD ["sh", "-c", "/etc/nginx/run.sh"]
